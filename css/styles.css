@@ -4,10 +4,17 @@
 body {
     margin: 0;
     margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
+}
+
+h2.gray {
+    margin-top: 0.5em;
+    color: lightgray;
+    font-weight: normal;
 }
 
 p {
@@ -15,10 +22,65 @@ p {
     line-height: 150%;
 }
 
-h1, h2, h3, p {
+.centered {
     display: block;
     width: 800px;
     margin: auto;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns > * {
+    flex: auto;
+}
+
+.columns > .quarter {
+    width: 220px;
+    min-width: 220px;
+}
+
+.underline {
+    border-bottom: 1px solid #DDD;
+}
+
+.billboard {
+    width: 200px;
+    height: 200px;
+    padding: 1em;
+    box-sizing: border-box;
+    float: right;
+    display: block;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.billboard.purple {
+    background-color: #9b1889;
+}
+
+.billboard.orange {
+    background-color: #ff7900;
+}
+
+.billboard.green {
+    background-color: #92d400;
+}
+
+.billboard > p {
+    color: #09F;
+    background-color: white;
+    width: 100%;
+    margin: 0 -1em;
+    padding: 0 1em;
+    line-height: 300%;
+    position: absolute;
+    bottom: 10px;
 }
 
 h1 {
