@@ -19,6 +19,12 @@ h2.gray {
     font-weight: normal;
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
 .centered {
     display: block;
     width: 800px;
@@ -40,6 +46,7 @@ h2.gray {
 }
 
 .underline {
+    padding-bottom: 16px;
     border-bottom: 1px solid #DDD;
 }
 
@@ -55,6 +62,35 @@ h2.gray {
     color: white;
     margin-bottom: 2em;
     position: relative;
+}
+
+.todo {
+    width: 200px;
+    padding: 1em;
+    box-sizing: border-box;
+    float: right;
+    display: block;
+    background-color: lightgray;
+}
+
+.todo ul {
+    list-style: none; 
+    padding-left: 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.todo ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+.todo ul li input {
+    margin-top: 8px;
+    margin-right: 16px;
 }
 
 .billboard.purple {
