@@ -18,3 +18,19 @@ document.getElementById("first-checkbox").addEventListener("change", function(e)
     if (!e.srcElement.checked) removeTodo();
     else addTodo();
 });
+
+
+var dropdowns = document.getElementsByClassName("dropdown");
+var current = null;
+
+for (var i = 0; i < dropdowns.length; i++) {
+    var element = dropdowns[i];
+    element.addEventListener("click", function() {
+        if (current)
+            current.classList.remove("down");
+        if (current !== this) {
+            this.classList.add("down");
+            current = this;
+        }
+    });
+}
