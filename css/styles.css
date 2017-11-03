@@ -105,6 +105,12 @@ a {
     background-color: #92d400;
 }
 
+.billboard.yellow {
+    color: black;
+    background-color: yellow;
+}
+
+
 .billboard > p {
     color: #09F;
     background-color: white;
@@ -114,6 +120,10 @@ a {
     line-height: 300%;
     position: absolute;
     bottom: 10px;
+}
+
+.billboard a {
+    text-decoration: none;
 }
 
 h1 {
@@ -166,9 +176,31 @@ img {
 }
 
 .dropdown.down + ul {
-    max-height: 500px;
+    max-height: 560px;
 }
 
 .style {
     font-weight: bold;
+}
+
+input[type=checkbox]{
+    height: 25px;
+    width: 25px;
+}
+
+input[type=button] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+input.back:hover{
+    opacity: 0;
+}
+
+input.back + input.back {
+    opacity: 0;
+}
+
+input.back:hover + input.back {
+    opacity: 1;
 }

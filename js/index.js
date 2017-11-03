@@ -21,14 +21,13 @@ document.getElementById("first-checkbox").addEventListener("change", function(e)
 
 
 var dropdowns = document.getElementsByClassName("dropdown");
-var current = null;
+var current = document.getElementById("ap-pre");
 
 for (var i = 0; i < dropdowns.length; i++) {
     var element = dropdowns[i];
     element.addEventListener("click", function() {
-        if (current)
-            current.classList.remove("down");
         if (current !== this) {
+            current.classList.remove("down");
             this.classList.add("down");
             current = this;
         }
